@@ -6,6 +6,40 @@
     <title>Резюме DevOps Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        secondary: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            500: '#64748b',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <style>
         .progress-bar {
             height: 8px;
@@ -16,7 +50,7 @@
         .progress-fill {
             height: 100%;
             border-radius: 4px;
-            background-color: #3b82f6;
+            background-color: #0ea5e9;
         }
         .hover-scale {
             transition: transform 0.3s ease;
@@ -30,41 +64,41 @@
             right: 20px;
             z-index: 100;
         }
-    </style>
+</style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-secondary-50 text-secondary-800 font-sans">
     <div class="container mx-auto px-4 py-8 max-w-6xl">
         <!-- Header -->
         <header class="bg-white rounded-xl shadow-md overflow-hidden mb-8 hover-scale">
             <div class="md:flex">
                 <div class="md:w-1/3 p-6 flex justify-center">
-                    <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-blue-100 shadow-lg">
+                    <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-primary-100 shadow-lg">
                         <img src="logo.jpg" 
                              alt="Фото кандидата" class="w-full h-full object-cover">
                     </div>
                 </div>
                 <div class="md:w-2/3 p-6 md:p-8">
-                    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Дмитрий Литовченко</h1>
-                    <h2 class="text-xl md:text-2xl text-blue-600 font-semibold mb-4">Junior DevOps Engineer</h2>
-                    <p class="text-gray-600 mb-6"> Я начинающий инженер в области DevOps и backend-разработки. Интересуюсь DevOps-практиками, мониторингом и автоматизацией развёртывания приложений. </p>
+                    <h1 class="text-3xl md:text-4xl font-bold text-secondary-900 mb-2">Дмитрий Литовченко</h1>
+                    <h2 class="text-xl md:text-2xl text-primary-600 font-semibold mb-4">Junior DevOps Engineer</h2>
+                    <p class="text-secondary-600 mb-6"> Я начинающий инженер в области DevOps и backend-разработки. Интересуюсь DevOps-практиками, мониторингом и автоматизацией развёртывания приложений. </p>
                     
                     <div class="flex flex-wrap gap-4">
-                        <div class="flex items-center text-gray-700">
-                            <i class="fas fa-map-marker-alt mr-2 text-blue-500"></i>
+                        <div class="flex items-center text-secondary-700">
+                            <i class="fas fa-map-marker-alt mr-2 text-primary-500"></i>
                             <span>Санкт-Петербург, Россия</span>
                         </div>
-                        <div class="flex items-center text-gray-700">
-                            <i class="fas fa-envelope mr-2 text-blue-500"></i>
+                        <div class="flex items-center text-secondary-700">
+                            <i class="fas fa-envelope mr-2 text-primary-500"></i>
                             <span>halfybro@gmail.com</span>
                         </div>
-                        <div class="flex items-center text-gray-700">
-                            <i class="fab fa-github mr-2 text-blue-500"></i>
-                            <a href="https://github.com/halfy1/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 hover:underline">
+                        <div class="flex items-center text-secondary-700">
+                            <i class="fab fa-github mr-2 text-primary-500"></i>
+                            <a href="https://github.com/halfy1/" target="_blank" rel="noopener noreferrer" class="hover:text-primary-600 hover:underline">
                                 https://github.com/halfy1/
                             </a>
                         </div>
-                        <div class="flex items-center text-gray-700">
-                            <i class="fas fa-phone mr-2 text-blue-500"></i>
+                        <div class="flex items-center text-secondary-700">
+                            <i class="fas fa-phone mr-2 text-primary-500"></i>
                             <span>+7 (915) 315-35-18</span>
                         </div>
                     </div>
@@ -77,42 +111,37 @@
             <div class="md:w-2/3 space-y-8">
                 <!-- Experience -->
                 <section class="bg-white rounded-xl shadow-md p-6 hover-scale">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                        <i class="fas fa-briefcase mr-3 text-blue-500"></i>
+                    <h2 class="text-2xl font-bold text-secondary-900 mb-6 flex items-center">
+                        <i class="fas fa-briefcase mr-3 text-primary-500"></i>
                         <span>Опыт работы</span>
                     </h2>
                     
                     <div class="space-y-6 relative">
                         <!-- Experience 1 -->
-                        <div class="timeline-item pl-8 relative">
-                            <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white">
-                                <i class="fas fa-building"></i>
-                            </div>
-                            <div class="ml-2">
+                        <div class="pl-8 relative">
+                            <div class="absolute left-0 top-0 w-2 h-full bg-primary-200"></div>
+<div class="ml-2">
                                 <h3 class="text-xl font-semibold">Куратор образовательной группы</h3>
-                                <div class="flex flex-wrap items-center text-gray-600 mb-2">
+                                <div class="flex flex-wrap items-center text-secondary-600 mb-2">
                                     <span class="mr-4">100БАЛЛЬНЫЙ РЕПЕТИТОР</span>
                                     <span class="text-sm"><i class="far fa-calendar mr-1"></i> 2023 — 2025</span>
                                 </div>
-                                <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                                <ul class="list-disc pl-5 space-y-1 text-secondary-700">
                                     <li>Ведение группы из 40 человек в подготовке в единым гос. экзаменам.</li>
                                     <li>Автоматизировал инфраструктуру с помощью Ansible. Во время работы написаны скрипты для автоматизации рабочего процесса: выгрузка созвонов, рабочих сессий.</li>
                                 </ul>
                             </div>
                         </div>
-                        
                         <!-- Experience 2 -->
-                        <div class="timeline-item pl-8 relative">
-                            <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white">
-                                <i class="fas fa-building"></i>
-                            </div>
-                            <div class="ml-2">
+                        <div class="pl-8 relative">
+                            <div class="absolute left-0 top-0 w-2 h-full bg-primary-200"></div>
+<div class="ml-2">
                                 <h3 class="text-xl font-semibold">C# Backend</h3>
-                                <div class="flex flex-wrap items-center text-gray-600 mb-2">
+                                <div class="flex flex-wrap items-center text-secondary-600 mb-2">
                                     <span class="mr-4">Специальный технологический центр</span>
                                     <span class="text-sm"><i class="far fa-calendar mr-1"></i> 2024 — 2025</span>
                                 </div>
-                                <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                                <ul class="list-disc pl-5 space-y-1 text-secondary-700">
                                     <li> Внутри команды реализовал серверное приложение для приёма, обработки и визуализации данных GPS/GNSS: чтение данных из GPS-модуля по COM-порту, парсинг NMEA-сообщений, WebSocket-сервер для трансляции местоположения</li>
                                     <li>Настроил GitLab CI для автоматического тестирования и развертывания приложений</li>
                                     <li>Автоматизировал процессы резервного копирования и восстановления данных</li>
@@ -125,109 +154,112 @@
                 
                 <!-- Projects -->
                 <section class="bg-white rounded-xl shadow-md p-6 hover-scale">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                        <i class="fas fa-project-diagram mr-3 text-blue-500"></i>
+                    <h2 class="text-2xl font-bold text-secondary-900 mb-6 flex items-center">
+                        <i class="fas fa-project-diagram mr-3 text-primary-500"></i>
                         <span>Проекты</span>
                     </h2>
                     
-                    <div class="grid md:grid-cols-2 gap-6">
+                    <div class="space-y-6">
                         <!-- Project 1 -->
-                        <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                            <div class="flex items-center mb-3">
-                                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-3">
-                                    <i class="fab fa-docker"></i>
+                        <div class="border border-secondary-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mr-3">
+                                        <i class="fab fa-docker"></i>
+                                    </div>
+                                    <h3 class="font-semibold">SatelliteTracker</h3>
                                 </div>
-                                <h3 class="font-semibold">SatelliteTracker</h3>
+                                <a href="https://github.com/halfy1/SatelliteTracker" target="_blank" rel="noopener noreferrer" class="text-primary-600 hover:text-primary-700 transition-colors">
+                                    <i class="fab fa-github text-xl"></i>
+                                </a>
                             </div>
-                            <p class="text-gray-600 text-sm mb-3">Серверное приложение для приёма, обработки и визуализации данных GPS/GNSS</p>
+                            <p class="text-secondary-600 text-sm mb-3">Серверное приложение для приёма, обработки и визуализации данных GPS/GNSS</p>
                             <div class="flex flex-wrap gap-2">
-                                <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">C#</span>
-                                <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">ASP.NET Core WebAPI</span>
-                                <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">Entity Framework Core</span>
-                                <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">Docker</span>
-                                <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">Ansible</span>
+                                <span class="px-2 py-1 bg-primary-100 text-primary-800 text-xs rounded">C#</span>
+                                <span class="px-2 py-1 bg-primary-100 text-primary-800 text-xs rounded">ASP.NET Core WebAPI</span>
+                                <span class="px-2 py-1 bg-primary-100 text-primary-800 text-xs rounded">Entity Framework Core</span>
+                                <span class="px-2 py-1 bg-primary-100 text-primary-800 text-xs rounded">Docker</span>
+                                <span class="px-2 py-1 bg-primary-100 text-primary-800 text-xs rounded">Ansible</span>
                             </div>
                         </div>
-                        
                         <!-- Project 2 -->
-                        <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                            <div class="flex items-center mb-3">
-                                <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3">
-                                    <i class="fas fa-code-branch"></i>
+                        <div class="border border-secondary-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3">
+                                        <i class="fas fa-code-branch"></i>
+                                    </div>
+                                    <h3 class="font-semibold"> M. I. R. Mephi ingeneer race</h3>
                                 </div>
-                                <h3 class="font-semibold"> M. I. R. Mephi ingeneer race</h3>
+                                <a href="https://github.com/halfy1/drone_code" target="_blank" rel="noopener noreferrer" class="text-green-600 hover:text-green-700 transition-colors">
+                                    <i class="fab fa-github text-xl"></i>
+                                </a>
                             </div>
-                            <p class="text-gray-600 text-sm mb-3">Отвечал за реализацию движение дрона, регистрации цвета по датчикам, а также сетевое подключение к другим дронам.</p>
+                            <p class="text-secondary-600 text-sm mb-3">Отвечал за реализацию движение дрона, регистрации цвета по датчикам, а также сетевое подключение к другим дронам.</p>
                             <div class="flex flex-wrap gap-2">
                                 <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded">Python: network, uasyncio, aioespnow,  machine </span>
                             </div>
                         </div>
-                        
                         <!-- Project 3 -->
-                        <!-- <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                            <div class="flex items-center mb-3">
-                                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 mr-3">
-                                    <i class="fas fa-chart-line"></i>
+                        <div class="border border-secondary-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 mr-3">
+                                        <i class="fas fa-server"></i>
+                                    </div>
+                                    <h3 class="font-semibold"> Nginx Reverse Proxy with Load Balancing</h3>
                                 </div>
-                                <h3 class="font-semibold">Мониторинг инфраструктуры</h3>
+                                <a href="https://github.com/halfy1/Nginx-Reverse-Proxy" target="_blank" rel="noopener noreferrer" class="text-green-600 hover:text-green-700 transition-colors">
+                                    <i class="fab fa-github text-xl"></i>
+                                </a>
                             </div>
-                            <p class="text-gray-600 text-sm mb-3">Развертывание системы мониторинга на базе Prometheus, Grafana и Alertmanager для 100+ сервисов.</p>
+                            <p class="text-secondary-600 text-sm mb-3">Настроил балансировку нагрузки между 3 инстансами Node.js приложения. Реализовал кэширование статики и API responses.Настроил мониторинг здоровья сервисов. Обеспечил безопасность через security headers и rate limiting. Создал структурированное логирование в JSON формате.</p>
                             <div class="flex flex-wrap gap-2">
-                                <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">Prometheus</span>
-                                <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">Grafana</span>
-                                <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">Loki</span>
+                                <span class="px-2 py-1 bg-primary-100 text-primary-800 text-xs rounded">Nginx</span>
+                                <span class="px-2 py-1 bg-primary-100 text-primary-800 text-xs rounded">Docker & Docker Compose</span>
+                                <span class="px-2 py-1 bg-primary-100 text-primary-800 text-xs rounded">Python/Flask</span>
+                                <span class="px-2 py-1 bg-primary-100 text-primary-800 text-xs rounded">Node.js/Express</span>
                             </div>
-                        </div> -->
-                        
-                        <!-- Project 4 -->
-                        <!-- <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
-                            <div class="flex items-center mb-3">
-                                <div class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center text-yellow-600 mr-3">
-                                    <i class="fas fa-cloud"></i>
-                                </div>
-                                <h3 class="font-semibold">Infrastructure as Code</h3>
-                            </div>
-                            <p class="text-gray-600 text-sm mb-3">Полная автоматизация облачной инфраструктуры в Yandex Cloud с использованием Terraform и Ansible.</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">Terraform</span>
-                                <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">Ansible</span>
-                                <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">Yandex Cloud</span>
-                            </div>
-                        </div> -->
-                    </div>
+                        </div>
+
+
+</div>
                 </section>
                 
                 <!-- Education -->
                 <section class="bg-white rounded-xl shadow-md p-6 hover-scale">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                        <i class="fas fa-graduation-cap mr-3 text-blue-500"></i>
+                    <h2 class="text-2xl font-bold text-secondary-900 mb-6 flex items-center">
+                        <i class="fas fa-graduation-cap mr-3 text-primary-500"></i>
                         <span>Образование</span>
                     </h2>
                     
                     <div class="space-y-6">
                         <!-- Education 1 -->
                         <div class="flex">
-                            <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                            <div class="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mr-4">
                                 <i class="fas fa-atom text-xl"></i>
                             </div>
                             <div>
                                 <h3 class="text-xl font-semibold">Национальный исследовательский ядерный университет "МИФИ"</h3>
-                                <p class="text-gray-600 mb-1">Институт лазерных и плазменных технологий</p>
-                                <p class="text-gray-500 text-sm">Приборостроение в научных исследованиях</p>
+                                <p class="text-secondary-600 mb-1">Институт лазерных и плазменных технологий</p>
+                                <p class="text-secondary-500 text-sm">Приборостроение в научных исследованиях</p>
                             </div>
                         </div>
                         
                         <!-- Education 2 -->
                         <div class="flex">
-                            <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-4">
+                            <div class="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mr-4">
                                 <i class="fas fa-university text-xl"></i>
                             </div>
                             <div>
                                 <h3 class="text-xl font-semibold"> Санкт-Петербургский политехнический университет Петра Великого</h3>
-                                <p class="text-gray-600 mb-1">Физико-механический факультет+</p>
-                                <p class="text-gray-500 text-sm">Прикладная математика и информатика</p>
+                                <p class="text-secondary-600 mb-1">Физико-механический факультет+</p>
+                                <p class="text-secondary-500 text-sm">Прикладная математика и информатика</p>
                             </div>
                         </div>
+
+
+                        
                     </div>
                 </section>
             </div>
@@ -236,188 +268,120 @@
             <div class="md:w-1/3 space-y-8 mt-8 md:mt-0">
                 <!-- Skills -->
                 <section class="bg-white rounded-xl shadow-md p-6 hover-scale">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                        <i class="fas fa-code mr-3 text-blue-500"></i>
+                    <h2 class="text-2xl font-bold text-secondary-900 mb-6 flex items-center">
+                        <i class="fas fa-code mr-3 text-primary-500"></i>
                         <span>Навыки</span>
                     </h2>
                     
                     <div class="space-y-4">
-                        <!-- Cloud -->
-                        <!-- <div>
-                            <h3 class="font-semibold text-gray-700 mb-2 flex items-center">
-                                <i class="fas fa-cloud mr-2 text-blue-400"></i>
-                                Облачные платформы
-                            </h3>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">Yandex Cloud</span>
-                                <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">AWS</span>
-                                <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">Azure</span>
-                            </div>
-                        </div> -->
-                        
                         <!-- Containers -->
                         <div>
-                            <h3 class="font-semibold text-gray-700 mb-2 flex items-center">
-                                <i class="fab fa-docker mr-2 text-blue-400"></i>
+                            <h3 class="font-semibold text-secondary-700 mb-2">
                                 Контейнеризация и оркестрация
                             </h3>
                             <div class="flex flex-wrap gap-2">
-                                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded">Docker</span>
-                                <!-- <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded">Kubernetes</span>
-                                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded">Helm</span> -->
+                                <span class="px-2 py-1 bg-primary-100 text-primary-800 text-xs rounded">Docker</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Networks -->
+                        <div>
+                            <h3 class="font-semibold text-secondary-700 mb-2">
+                                Сети
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-primary-100 text-primary-800 text-xs rounded">Nginx</span>
+                                <span class="px-2 py-1 bg-primary-100 text-primary-800 text-xs rounded">WebSocket</span>
+                                <span class="px-2 py-1 bg-primary-100 text-primary-800 text-xs rounded">TCP/IP</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Web Servers -->
+                        <div>
+                            <h3 class="font-semibold text-secondary-700 mb-2">
+                                Веб-серверы
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-primary-100 text-primary-800 text-xs rounded">Nginx</span>
                             </div>
                         </div>
                         
                         <!-- IaC -->
                         <div>
-                            <h3 class="font-semibold text-gray-700 mb-2 flex items-center">
-                                <i class="fas fa-code-branch mr-2 text-blue-400"></i>
+                            <h3 class="font-semibold text-secondary-700 mb-2">
                                 Инфраструктура как код
                             </h3>
                             <div class="flex flex-wrap gap-2">
-                                <!-- <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">Terraform</span> -->
-                                <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">Ansible</span>
-                                <!-- <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">Pulumi</span>
-                                <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">Crossplane</span> -->
+                                <span class="px-2 py-1 bg-primary-100 text-primary-800 text-xs rounded">Ansible</span>
                             </div>
                         </div>
                         
                         <!-- CI/CD -->
                         <div>
-                            <h3 class="font-semibold text-gray-700 mb-2 flex items-center">
-                                <i class="fas fa-sync-alt mr-2 text-blue-400"></i>
+                            <h3 class="font-semibold text-secondary-700 mb-2">
                                 CI/CD
                             </h3>
                             <div class="flex flex-wrap gap-2">
-                                <!-- <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded">GitLab CI</span> -->
-                                <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded">GitHub Actions</span>
-                                <!-- <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded">Jenkins</span>
-                                <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded">ArgoCD</span> -->
+                                <span class="px-2 py-1 bg-primary-100 text-primary-800 text-xs rounded">GitHub Actions</span>
+                                <span class="px-2 py-1 bg-primary-100 text-primary-800 text-xs rounded">GitLab CI</span>
                             </div>
                         </div>
-                        
-                        <!-- Monitoring -->
-                        <!-- <div>
-                            <h3 class="font-semibold text-gray-700 mb-2 flex items-center">
-                                <i class="fas fa-chart-bar mr-2 text-blue-400"></i>
-                                Мониторинг и логирование
-                            </h3>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">Prometheus</span>
-                                <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">Grafana</span>
-                                <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">ELK Stack</span>
-                                <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">Loki</span>
-                                <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded">Alertmanager</span>
-                            </div>
-                        </div> -->
                         
                         <!-- Programming -->
                         <div>
-                            <h3 class="font-semibold text-gray-700 mb-2 flex items-center">
-                                <i class="fas fa-laptop-code mr-2 text-blue-400"></i>
+                            <h3 class="font-semibold text-secondary-700 mb-2">
                                 Программирование
                             </h3>
                             <div class="flex flex-wrap gap-2">
-                                <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">Python</span>
-                                <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">Bash</span>
-                                <!-- <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">Go</span> -->
-                                <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded">SQL</span>
+                                <span class="px-2 py-1 bg-primary-100 text-primary-800 text-xs rounded">Python</span>
+                                <span class="px-2 py-1 bg-primary-100 text-primary-800 text-xs rounded">Bash</span>
+                                <span class="px-2 py-1 bg-primary-100 text-primary-800 text-xs rounded">SQL</span>
+                                <span class="px-2 py-1 bg-primary-100 text-primary-800 text-xs rounded">C#</span>
                             </div>
                         </div>
-                    </div>
+</div>
                 </section>
-                
-                <!-- Certifications -->
-                <!-- <section class="bg-white rounded-xl shadow-md p-6 hover-scale">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                        <i class="fas fa-award mr-3 text-blue-500"></i>
-                        <span>Сертификаты</span>
-                    </h2>
-                    
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-3 mt-1">
-                                <i class="fas fa-certificate"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold">Certified Kubernetes Administrator (CKA)</h3>
-                                <p class="text-gray-600 text-sm">Cloud Native Computing Foundation, 2022</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-3 mt-1">
-                                <i class="fas fa-certificate"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold">AWS Certified DevOps Engineer</h3>
-                                <p class="text-gray-600 text-sm">Amazon Web Services, 2021</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-3 mt-1">
-                                <i class="fas fa-certificate"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold">Terraform Associate</h3>
-                                <p class="text-gray-600 text-sm">HashiCorp, 2020</p>
-                            </div>
-                        </div>
-                    </div>
-                </section> -->
                 
                 <!-- Languages -->
                 <section class="bg-white rounded-xl shadow-md p-6 hover-scale">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                        <i class="fas fa-language mr-3 text-blue-500"></i>
+                    <h2 class="text-2xl font-bold text-secondary-900 mb-6 flex items-center">
+                        <i class="fas fa-language mr-3 text-primary-500"></i>
                         <span>Языки</span>
                     </h2>
-                    
                     <div class="flex flex-wrap gap-3">
-                        <div class="flex items-center px-3 py-1 bg-blue-50 rounded-full">
-                            <i class="fas fa-language text-blue-500 mr-2"></i>
+                        <div class="flex items-center px-3 py-1 bg-primary-50 rounded-full">
                             <span class="text-sm">Русский (Родной)</span>
                         </div>
-                        <div class="flex items-center px-3 py-1 bg-green-50 rounded-full">
-                            <i class="fas fa-language text-green-500 mr-2"></i>
+                        <div class="flex items-center px-3 py-1 bg-primary-50 rounded-full">
                             <span class="text-sm">Английский (Технический B1)</span>
                         </div>
                     </div>
-                </section>
+</section>
                 
                 <!-- Interests -->
                 <section class="bg-white rounded-xl shadow-md p-6 hover-scale">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                        <i class="fas fa-heart mr-3 text-blue-500"></i>
+                    <h2 class="text-2xl font-bold text-secondary-900 mb-6 flex items-center">
+                        <i class="fas fa-heart mr-3 text-primary-500"></i>
                         <span>Интересы</span>
                     </h2>
-                    
                     <div class="flex flex-wrap gap-3">
-                        <div class="flex items-center px-3 py-1 bg-blue-50 rounded-full">
-                            <i class="fas fa-microchip text-blue-500 mr-2"></i>
+                        <div class="flex items-center px-3 py-1 bg-primary-50 rounded-full">
                             <span class="text-sm">Технологии</span>
                         </div>
-                        <div class="flex items-center px-3 py-1 bg-green-50 rounded-full">
-                            <i class="fas fa-gauge-high text-green-500 mr-2"></i>
+                        <div class="flex items-center px-3 py-1 bg-primary-50 rounded-full">
                             <span class="text-sm">F1</span>
                         </div>
-                        <div class="flex items-center px-3 py-1 bg-purple-50 rounded-full">
-                            <i class="fas fa-person-rifle text-purple-500 mr-2"></i>
-                            <span class="text-sm">BF6"</span>
-                        </div>
-                        <div class="flex items-center px-3 py-1 bg-yellow-50 rounded-full">
-                            <i class="fas fa-car text-yellow-500 mr-2"></i>
-                            <span class="text-sm">Forza horizon 4</span>
+                        <div class="flex items-center px-3 py-1 bg-primary-50 rounded-full">
+                            <span class="text-sm">Картинг</span>
                         </div>
                     </div>
-                </section>
+</section>
             </div>
         </div>
     </div>
 
     <!-- Print Button -->
-    <button onclick="window.print()" class="print-button bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+    <button onclick="window.print()" class="print-button bg-primary-600 hover:bg-primary-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
         <i class="fas fa-print mr-2"></i> Печать резюме
     </button>
 
@@ -426,6 +390,8 @@
         document.addEventListener('DOMContentLoaded', () => {
             const elements = document.querySelectorAll('.hover-scale');
             elements.forEach((el, index) => {
+                el.style.opacity = '0';
+                el.style.transition = 'opacity 0.5s ease';
                 setTimeout(() => {
                     el.style.opacity = '1';
                 }, 100 * index);
